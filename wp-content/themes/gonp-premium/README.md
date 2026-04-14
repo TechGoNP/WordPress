@@ -10,7 +10,7 @@ Custom WordPress theme focused on a premium, conversion-first homepage for GaysO
 - ACF field group JSON with editable fields, repeaters, and section visibility toggles.
 
 ## Setup
-1. Install this theme in `wp-content/themes/gonp-premium`.
+1. Install this theme in `wp-content/themes/gonp-premium` (zip the folder contents including `style.css`, `index.php`, `header.php`, and `footer.php`).
 2. Activate the theme in WordPress admin.
 3. Set a static front page under **Settings → Reading**.
 4. Install and activate **Advanced Custom Fields Pro** (required for repeaters).
