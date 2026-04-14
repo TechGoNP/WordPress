@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LGBT IRL Platform Prototype</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>LGBT IRL Connection Platform</h1>
+    <p class="small">Community-first · SFW-only · IRL-first</p>
+    <nav>
+      <a href="#experiences">Experiences</a>
+      <a href="#chapters">Local Chapters</a>
+      <a href="#host">Host Intake</a>
+      <a href="#requests">Trip/Chapter Request</a>
+      <a href="#scholarships">Scholarships</a>
+      <a href="#download">Download App</a>
+      <a href="#safety">Safety</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card" id="experiences">
+      <h2>Experiences</h2>
+      <p>Prototype listing cards to validate IA before full data integration.</p>
+      <div class="grid">
+        <article class="card"><h3>Queer Hiking Collective</h3><p>Denver · Apr 25 · Outdoors</p></article>
+        <article class="card"><h3>Creative Writing Circle</h3><p>Austin · May 02 · Arts</p></article>
+        <article class="card"><h3>Community Wellness Night</h3><p>Seattle · May 08 · Wellness</p></article>
+      </div>
+    </section>
+
+    <section class="card" id="chapters">
+      <h2>Local Chapters</h2>
+      <p>Initial chapter placeholders: NYC, Los Angeles, Chicago, Atlanta, Seattle.</p>
+      <p class="small">CTA target in full build: “Join in App”.</p>
+    </section>
+
+    <section class="card" id="host">
+      <h2>Host an Experience</h2>
+      <form onsubmit="submitForm(event, '/submit/host-intake')">
+        <label>Name <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label>City <input name="city" required /></label>
+        <label>Experience concept <textarea name="concept" rows="3" required></textarea></label>
+        <label>Estimated capacity <input name="capacity" type="number" min="1" required /></label>
+        <button type="submit">Submit Host Intake</button>
+        <p class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="card" id="requests">
+      <h2>Request a Trip / Chapter</h2>
+      <div class="grid">
+        <form onsubmit="submitForm(event, '/submit/trip-request')">
+          <h3>Trip Request</h3>
+          <label>Name <input name="name" required /></label>
+          <label>Email <input name="email" type="email" required /></label>
+          <label>Preferred destination <input name="destination" required /></label>
+          <label>Group size estimate <input name="group_size" type="number" min="1" required /></label>
+          <button type="submit">Submit Trip Request</button>
+          <p class="status" aria-live="polite"></p>
+        </form>
+
+        <form onsubmit="submitForm(event, '/submit/chapter-request')">
+          <h3>Chapter Request</h3>
+          <label>Name <input name="name" required /></label>
+          <label>Email <input name="email" type="email" required /></label>
+          <label>City <input name="city" required /></label>
+          <label>Why now? <textarea name="rationale" rows="3" required></textarea></label>
+          <button type="submit">Submit Chapter Request</button>
+          <p class="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+    <section class="card" id="scholarships">
+      <h2>Scholarship Application</h2>
+      <form onsubmit="submitForm(event, '/submit/scholarship')">
+        <label>Name <input name="name" required /></label>
+        <label>Email <input name="email" type="email" required /></label>
+        <label>City <input name="city" required /></label>
+        <label>Requested amount (USD) <input name="amount" type="number" min="1" required /></label>
+        <label>Short context <textarea name="context" rows="3" required></textarea></label>
+        <button type="submit">Apply for Scholarship</button>
+        <p class="status" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="card" id="download">
+      <h2>Download App</h2>
+      <p>Prototype links:</p>
+      <ul>
+        <li>iOS (placeholder)</li>
+        <li>Android (placeholder)</li>
+      </ul>
+    </section>
+
+    <section class="card" id="safety">
+      <h2>Safety & Community Guidelines</h2>
+      <p>SFW-only baseline. Respectful behavior required. Reports are reviewed by city and regional moderation roles.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="small">Prototype for Milestone 0 / early Milestone 1 validation.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
