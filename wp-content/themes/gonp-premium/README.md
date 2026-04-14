@@ -32,7 +32,6 @@ Custom WordPress theme focused on a premium, conversion-first homepage for GaysO
 - Theme ships with placeholder defaults so the page is renderable before data entry.
 - Replace placeholders with approved copy/media before production launch.
 
-
 ### Zip check
 Before upload, open the zip and confirm these paths exist at the top theme level:
 - `gonp-premium/style.css`
