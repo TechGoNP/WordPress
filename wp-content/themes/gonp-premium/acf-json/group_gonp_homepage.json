@@ -1,0 +1,143 @@
+{
+  "key": "group_gonp_homepage",
+  "title": "GoNP Homepage",
+  "fields": [
+    {"key":"field_home_hero","label":"Hero","name":"hero","type":"group","layout":"block","sub_fields":[
+      {"key":"field_hero_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_hero_brand","label":"Brand","name":"brand","type":"text"},
+      {"key":"field_hero_eyebrow","label":"Eyebrow","name":"eyebrow","type":"text"},
+      {"key":"field_hero_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_hero_subheadline","label":"Subheadline","name":"subheadline","type":"textarea"},
+      {"key":"field_hero_video","label":"Hero Video","name":"video_mp4","type":"file","return_format":"array","mime_types":"mp4"},
+      {"key":"field_hero_poster","label":"Poster Image","name":"poster_image","type":"image","return_format":"array"},
+      {"key":"field_hero_primary_label","label":"Primary CTA Label","name":"primary_cta_label","type":"text"},
+      {"key":"field_hero_primary_url","label":"Primary CTA URL","name":"primary_cta_url","type":"url"},
+      {"key":"field_hero_secondary_label","label":"Secondary CTA Label","name":"secondary_cta_label","type":"text"},
+      {"key":"field_hero_secondary_url","label":"Secondary CTA URL","name":"secondary_cta_url","type":"url"},
+      {"key":"field_hero_tertiary_label","label":"Tertiary CTA Label","name":"tertiary_cta_label","type":"text"},
+      {"key":"field_hero_tertiary_url","label":"Tertiary CTA URL","name":"tertiary_cta_url","type":"url"},
+      {"key":"field_hero_nav_items","label":"Nav Items","name":"nav_items","type":"repeater","layout":"row","button_label":"Add Nav Item","sub_fields":[
+        {"key":"field_nav_label","label":"Label","name":"label","type":"text"},
+        {"key":"field_nav_url","label":"URL","name":"url","type":"url"}
+      ]}
+    ]},
+
+    {"key":"field_home_clarity","label":"Quick Clarity Band","name":"clarity_band","type":"group","sub_fields":[
+      {"key":"field_clarity_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_clarity_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_clarity_text","label":"Text","name":"text","type":"textarea"},
+      {"key":"field_clarity_primary_label","label":"Primary CTA Label","name":"primary_cta_label","type":"text"},
+      {"key":"field_clarity_primary_url","label":"Primary CTA URL","name":"primary_cta_url","type":"url"},
+      {"key":"field_clarity_secondary_label","label":"Secondary CTA Label","name":"secondary_cta_label","type":"text"},
+      {"key":"field_clarity_secondary_url","label":"Secondary CTA URL","name":"secondary_cta_url","type":"url"}
+    ]},
+
+    {"key":"field_home_featured","label":"Featured Trips","name":"featured_trips","type":"group","sub_fields":[
+      {"key":"field_featured_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_featured_eyebrow","label":"Eyebrow","name":"eyebrow","type":"text"},
+      {"key":"field_featured_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_featured_text","label":"Text","name":"text","type":"textarea"},
+      {"key":"field_featured_all_url","label":"All Trips URL","name":"all_trips_url","type":"url"},
+      {"key":"field_trip_cards","label":"Trip Cards","name":"trip_cards","type":"repeater","layout":"block","button_label":"Add Trip","sub_fields":[
+        {"key":"field_trip_image","label":"Image","name":"image","type":"image","return_format":"array"},
+        {"key":"field_trip_title","label":"Title","name":"title","type":"text"},
+        {"key":"field_trip_location","label":"Location","name":"location","type":"text"},
+        {"key":"field_trip_date","label":"Date","name":"date","type":"text"},
+        {"key":"field_trip_desc","label":"Description","name":"description","type":"textarea"},
+        {"key":"field_trip_tags","label":"Tags","name":"tags","type":"text"},
+        {"key":"field_trip_price","label":"Price","name":"price","type":"text"},
+        {"key":"field_trip_cta_label","label":"CTA Label","name":"cta_label","type":"text"},
+        {"key":"field_trip_cta_url","label":"CTA URL","name":"cta_url","type":"url"}
+      ]}
+    ]},
+
+    {"key":"field_home_belonging","label":"Belonging Section","name":"belonging_section","type":"group","sub_fields":[
+      {"key":"field_belonging_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_belonging_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_belonging_body","label":"Body","name":"body","type":"textarea","rows":8},
+      {"key":"field_belonging_image","label":"Image","name":"image","type":"image","return_format":"array"},
+      {"key":"field_belonging_cta_label","label":"CTA Label","name":"cta_label","type":"text"},
+      {"key":"field_belonging_cta_url","label":"CTA URL","name":"cta_url","type":"url"}
+    ]},
+
+    {"key":"field_home_trust","label":"Trust Section","name":"trust_section","type":"group","sub_fields":[
+      {"key":"field_trust_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_trust_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_trust_stats","label":"Stats","name":"stats","type":"repeater","button_label":"Add Stat","sub_fields":[
+        {"key":"field_stat_value","label":"Value","name":"value","type":"text"},
+        {"key":"field_stat_label","label":"Label","name":"label","type":"text"}
+      ]},
+      {"key":"field_trust_logos","label":"Logos","name":"logos","type":"repeater","button_label":"Add Logo","sub_fields":[
+        {"key":"field_logo_name","label":"Name","name":"name","type":"text"},
+        {"key":"field_logo_image","label":"Image","name":"image","type":"image","return_format":"array"}
+      ]},
+      {"key":"field_trust_testimonials","label":"Testimonials","name":"testimonials","type":"repeater","button_label":"Add Testimonial","sub_fields":[
+        {"key":"field_testimonial_quote","label":"Quote","name":"quote","type":"textarea"},
+        {"key":"field_testimonial_name","label":"Name","name":"name","type":"text"}
+      ]}
+    ]},
+
+    {"key":"field_home_mission","label":"Mission Section","name":"mission_section","type":"group","sub_fields":[
+      {"key":"field_mission_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_mission_eyebrow","label":"Eyebrow","name":"eyebrow","type":"text"},
+      {"key":"field_mission_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_mission_body","label":"Body","name":"body","type":"textarea","rows":10},
+      {"key":"field_mission_cards","label":"Support Cards","name":"cards","type":"repeater","button_label":"Add Card","sub_fields":[
+        {"key":"field_mission_card_title","label":"Title","name":"title","type":"text"},
+        {"key":"field_mission_card_text","label":"Text","name":"text","type":"textarea"}
+      ]}
+    ]},
+
+    {"key":"field_home_pathways","label":"Pathways Section","name":"pathways_section","type":"group","sub_fields":[
+      {"key":"field_pathways_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_pathways_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_pathways_text","label":"Text","name":"text","type":"textarea"},
+      {"key":"field_pathways_cards","label":"Pathway Cards","name":"cards","type":"repeater","button_label":"Add Pathway","sub_fields":[
+        {"key":"field_pathway_image","label":"Image","name":"image","type":"image","return_format":"array"},
+        {"key":"field_pathway_title","label":"Title","name":"title","type":"text"},
+        {"key":"field_pathway_text","label":"Text","name":"text","type":"textarea"},
+        {"key":"field_pathway_cta_label","label":"CTA Label","name":"cta_label","type":"text"},
+        {"key":"field_pathway_cta_url","label":"CTA URL","name":"cta_url","type":"url"}
+      ]}
+    ]},
+
+    {"key":"field_home_portraits","label":"Portraits Section","name":"portraits_section","type":"group","sub_fields":[
+      {"key":"field_portraits_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_portraits_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_portraits_text","label":"Text","name":"text","type":"textarea"},
+      {"key":"field_portraits_cards","label":"Portrait Cards","name":"cards","type":"repeater","button_label":"Add Story","sub_fields":[
+        {"key":"field_portrait_photo","label":"Photo","name":"photo","type":"image","return_format":"array"},
+        {"key":"field_portrait_name","label":"Name","name":"name","type":"text"},
+        {"key":"field_portrait_descriptor","label":"Descriptor","name":"descriptor","type":"text"},
+        {"key":"field_portrait_quote","label":"Quote","name":"quote","type":"textarea"},
+        {"key":"field_portrait_link","label":"Story URL","name":"link","type":"url"}
+      ]}
+    ]},
+
+    {"key":"field_home_stay","label":"Stay Connected","name":"stay_connected","type":"group","sub_fields":[
+      {"key":"field_stay_show","label":"Show section","name":"show","type":"true_false","ui":1,"default_value":1},
+      {"key":"field_stay_headline","label":"Headline","name":"headline","type":"text"},
+      {"key":"field_stay_text","label":"Text","name":"text","type":"textarea"},
+      {"key":"field_stay_button","label":"Button Label","name":"button_label","type":"text"},
+      {"key":"field_stay_form_action","label":"Form Action","name":"form_action","type":"url"},
+      {"key":"field_stay_instagram","label":"Instagram URL","name":"instagram_url","type":"url"},
+      {"key":"field_stay_stories","label":"Stories URL","name":"stories_url","type":"url"}
+    ]},
+
+    {"key":"field_home_footer","label":"Footer","name":"footer_section","type":"group","sub_fields":[
+      {"key":"field_footer_brand","label":"Brand","name":"brand","type":"text"},
+      {"key":"field_footer_tagline","label":"Tagline","name":"tagline","type":"text"}
+    ]}
+  ],
+  "location": [[{"param":"page_type","operator":"==","value":"front_page"}]],
+  "menu_order": 0,
+  "position": "normal",
+  "style": "default",
+  "label_placement": "top",
+  "instruction_placement": "label",
+  "hide_on_screen": ["the_content"],
+  "active": true,
+  "description": "Editable homepage content and repeaters for GoNP premium homepage",
+  "show_in_rest": 0,
+  "modified": 1713139200
+}
